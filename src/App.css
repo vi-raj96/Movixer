@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+h1{
+  color: #e50914;
+}
+
+
+header {
+  margin-bottom: 30px;
+  margin-top: -10px;
+  background-color: #070707;
+  padding: 5px;
+}
+
+form {
+  display: inline-block;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.movie {
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: #575151;
+  border: 0.5px solid #575151
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px 0 #575151;
+}
+
+.movie img {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  padding-top: 10px;
+}
+.movie h3 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .selected-movie {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poster-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movies {
+    justify-content: flex-start;
+  }
+}
+
+.movies-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.selected-movie {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.movie-details {
+  flex: 1;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  text-align: left;
+  border: 0.5px solid #575151
+}
+
+.movie-details h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.movie-details p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.poster-container {
+  flex: 1;
+  max-width: 300px;
+}
+.poster-container img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+.cancel-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+  justify-content: right;
+  text-align: right;
+}
